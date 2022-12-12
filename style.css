@@ -1,0 +1,248 @@
+html, input, textarea, keygen, select, button {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 100%;
+}
+
+html {
+    height: 100%;
+    font-size: 100%;
+
+    background-color: #f0eee6;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    height: 100%;
+
+    font-size: 100%;
+
+    padding: 0;
+    margin: 0;
+    color: #3f464c;
+    line-height: 1;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+header {
+    height: 7.5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    background-color: #006ec0;
+
+    display: flex;
+}
+
+#blueBarTitle{
+    color: #fff;
+    font-family: 'AVM', 'Source Sans Pro', Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    overflow:hidden;
+    white-space:nowrap;
+
+    align-self: center;
+    text-align: center;
+    margin: .3rem 0 0;
+    padding-right: 8rem;
+    flex: 1 1 auto;
+
+
+    font-family: 'AVM', 'Source Sans Pro', Arial, sans-serif;
+}
+
+
+#logoBox {
+    background-image: url(images/logo_fritzDiamond.svg);
+    background-position: 100%;
+    background-size:8rem 8rem;
+    width:11rem;
+    height:8rem;
+    color:transparent;
+    background-repeat:no-repeat;
+}
+
+
+.dialogOuter {
+    zoom:125%;
+    height: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(images/img_login_background.svg);
+    background-position: center 51%;
+    background-repeat: no-repeat;
+    background-size: 38rem;
+    padding: 0 0;
+}
+
+.dialogOuter p{
+    margin:1.25rem 0;
+    line-height:1.25rem;
+}
+
+.dialogInner {
+    flex:0 0 28.75rem;
+    margin:auto 5rem;
+    padding:0;
+
+    box-shadow: 0 .19rem .4rem rgba(0,0,0,.25);
+    background-color: #fff;
+}
+
+#dialogHeadBox {
+    height: 3.25rem;
+    background-color: #268edf;
+    margin: auto;
+}
+
+#dialogHeadBox h2{
+    margin:0 0 0 1.25rem;
+    font-weight:700;
+    font-size:1.25rem;
+    color:#fff;
+    letter-spacing:.025rem;
+    line-height:3.4rem;
+}
+
+#dialogContent {
+    padding: 0 0 1rem;
+    min-height: 5rem;
+}
+
+.formular {
+    margin: 0;
+    padding: 0 1.25rem;
+}
+
+input, label, select {
+    margin: 0 0 .5rem;
+    color: #3f464c;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#inputWrapper {
+    display: inline-flex;
+}
+
+.formular label {
+    width: 9.5rem;
+    margin-right: .5rem;
+    line-height: 1.7rem;
+}
+
+.formular input {
+    width: 15.4rem;
+    height: 1.5rem;
+    border: 1px solid #d5d5d5;
+    outline: none;
+}
+
+.formular input:disabled {    
+    border-color: red;
+    background-color: rgba(0, 0, 0, .03);
+    cursor: default;
+}
+
+i.icon--eye:before{
+    background-image:url(images/ic_eye.svg)
+}
+i.icon--eye-slash:before{
+    background-image:url(images/ic_eye_slash.svg)
+}
+
+#loginError {
+    display: none;
+}
+
+button {
+    min-width: 7.5rem;
+    min-height: 2rem;
+    margin: 0 0 0 .5rem;
+    padding: .35rem 1rem;
+
+    border: 0;
+    border-radius: 0;
+    background-color:#268edf;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:active {
+    background-color: #57768c;
+}
+
+button:disabled {
+    background-color: lightgray;
+    cursor: default;
+    color: gray;
+}
+
+.btnFormFoot {
+    border-top: 1px solid #d5d5d5;
+    margin: 1.75rem 0 0;
+    padding: 1rem 1.25rem 0;
+    align-items:center;
+    text-align: right;
+    display: flex;
+    justify-content:space-between;
+}
+
+.btnFormFoot a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: .96rem;
+    font-weight: 400;
+    color: #4269a4;
+    margin: 0;
+    padding: .1rem 0 0;
+    cursor: pointer
+}
+
+.btnFormFoot a:hover {
+    text-decoration: underline;
+}
+
+.btnFormFoot a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: .96rem;
+    font-weight: 400;
+    color: #4269a4;
+    margin: 0;
+    padding: .1rem 0 0;
+    cursor: pointer
+}
+
+.btnFormFoot a:hover {
+    text-decoration: underline;
+}
+
+#changeHint a {
+    text-decoration: none;
+    color: #4269a4;
+    margin: 0;
+    padding: .1rem 0 0;
+    cursor: pointer
+}
+
+#changeHint a:hover {
+    text-decoration: underline;
+}
+
+#changeHint {
+    padding-top: 1rem;
+}

